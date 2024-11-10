@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Темніший прозорий фон */
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 900px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Прозорий фон для галереї */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8); /* Більш виражена тінь */
+}
+
+.gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8); /* Глибока тінь */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 1); /* Підсилена тінь при наведенні */
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); /* Додана тінь для кнопок */
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: #555555;
+    transform: translateY(-2px); /* Підйом кнопки */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.8); /* Посилена тінь при наведенні */
+}
